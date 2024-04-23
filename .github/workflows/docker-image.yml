@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "v26" ]
+    branches: [ "v27" ]
   pull_request:
-    branches: [ "v26" ]
+    branches: [ "v27" ]
 
 env:
   # 设置 docker 镜像名
@@ -41,6 +41,6 @@ jobs:
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
           # 设置镜像 id 和版本号
-          docker tag $IMAGE_NAME $IMAGE_ID:26
+          docker tag $IMAGE_NAME $IMAGE_ID:27
           # 进行 push
-          docker push $IMAGE_ID:26
+          docker push $IMAGE_ID:27
