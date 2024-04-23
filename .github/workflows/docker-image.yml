@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "v24" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "v24" ]
 
 env:
   # 设置 docker 镜像名
